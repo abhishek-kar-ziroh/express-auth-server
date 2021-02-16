@@ -157,7 +157,7 @@ app.get("/message", (req, res) => {
           date: obj[3],
           avatarId: Math.random().toString(36).substring(20),
         });
-        // client.DEL(`${userId}_${senderId}_message`);
+        client.DEL(`${userId}_${senderId}_message`);
       } else res.render("Error");
     }
   );

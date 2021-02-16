@@ -1,0 +1,29 @@
+<div class="container rounded center-div bg-light">
+    <form class="form-horizontal p-2">
+        <div class="panel-heading inner-all">
+            <div class="pull-left">
+                <h3 class="lead no-margin"><strong class="font-weight-bold">{{subject}}</strong></h3>
+            </div>
+            <div class="clearfix"></div>
+        </div><!-- /.panel-sub-heading -->
+        <div class="panel-sub-heading inner-all">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-7">
+                    <img src="https://avatars.dicebear.com/4.5/api/bottts/:{{avatarId}}.svg?width=128&height=128" alt="..." class="img-circle senden-img">
+                    <span>{{from}}</span>
+                    to
+                    <strong>me</strong>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-5">
+                    <p class="pull-right">{{date}}</p>
+                </div>
+            </div>
+        </div><!-- /.panel-sub-heading -->
+        <div class="panel-body">
+            <div class="view-mail">
+                <p>{{{message}}}</p>
+                <br>
+                <small class="font-weight-light text-centered">This message will be deleted upon session end.</small>
+            </div><!-- /.view-mail -->
+    </form>
+</div>

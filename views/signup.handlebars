@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="/css/signup.css">
+
+<div class="page__container">
+    <div class="logos">
+        <p class="logo__text">OMail</p>
+        <span class="logo__text">Start sending private emails in<br>3 easy steps</span>
+        <ul>
+            {{#if installed}}
+            <li><div>1</div><span>Create an OMail account by using your existing email ID & password</span></li>
+            <li><div>2</div><span>Sign in and start composing private emails</span></li>
+            <li><div>3</div><span>If your receiver is not using OMail, send them a passphrase to unlock your private message</span></li>
+            {{else}}
+            <li><div>1</div><span>Install OMail Chrome Extension</span></li>
+            <li><div>2</div><span>Create an OMail account by using your existing email ID & password</span></li>
+            <li><div>3</div><span>Sign in and start composing private emails</span></li>
+            <li><div>4</div><span>If your receiver is not using OMail, send them a passphrase to unlock your private message</span></li>
+            {{/if}}
+        </ul>
+        <div>
+            Fully Private, <br><small class='text-muted logo__text'>Even From Your Email Service Provider.</small>
+        </div>
+    </div>
+    <div class="signup__container">
+        <div class="ziroh__logo">
+            <img src="https://ziroh.com/images/logo-1.png" alt="ziroh labs logo">
+        </div>
+        <p class="text-muted">
+            Welcome!
+        </p>
+        <span>
+            Sign Up to ..
+        </span>
+        <label for="email">E-Mail</label>
+        <div class="input__containers">
+            <img src="/assets/mail.svg" alt="envolop logo">
+            <input type="text" id="email" placeholder="elonmusk@mars.com">
+        </div>
+        <label for="password">Password</label>
+        <div class="input__containers">
+            <img src="/assets/lock.svg" alt="lock logo">
+            <input type="password" id="password" placeholder="e.g.: WeLoveAll@_108">
+        </div>
+        <div class="submit__btn logo__text disabled">Sign In</div>
+    </div>
+</div>
+<div class="success__container">
+    <div class="logos">
+        <span>Yay! You have signed up for OMail.<br><span>Get ready to secure your emails.</span></span>
+    </div>
+</div>
+<img class="footer" src="/assets/Frame 6.jpg">
+<script src="/scripts/signupservice.js"></script>
+<script src="/scripts/signup.js"></script>

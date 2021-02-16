@@ -1,0 +1,549 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  width: 100%;
+  height: 100vh;
+}
+
+div.container {
+  width: 66%;
+}
+span.cross {
+  font-size: 13px;
+  margin: 6px 0 0 3px;
+  font-weight: 700;
+}
+span.important {
+  color: #fdd200;
+  margin: 4px 0 0 10px;
+}
+div.inbox {
+  background: gainsboro;
+  height: 23px;
+  padding: 0 6px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #7d7d7d;
+  margin: 5px 0 0 11px;
+  cursor: pointer;
+}
+div.user {
+  margin-top: 40px;
+}
+img.user {
+  width: 67px;
+  margin: 2px 12px 0 -78px;
+}
+
+div.headlabel {
+  width: 100%;
+}
+div.hicon span.material-icons {
+  font-size: 20px;
+  color: grey;
+  margin: 0 4px;
+}
+div.hicon p {
+  margin: -3px 13px 0px 0px;
+  font-weight: 550;
+  color: grey;
+}
+a.mail {
+  margin: -13px 0 0 -12px;
+  color: grey;
+}
+p.sub {
+  margin: 0 0 0 1px;
+  color: gray;
+  font-size: 18px;
+  font-weight: 550;
+}
+hr.dividr:not([size]) {
+  height: 1.5px;
+}
+hr.dividr {
+  margin: 2rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+  width: 639px;
+}
+strong.email {
+  color: rgb(29, 131, 248);
+}
+div.send button {
+  width: 121px;
+  display: flex;
+  background: none;
+  color: gray;
+  border: 1px solid gray;
+}
+div.send button:hover {
+  background: none;
+  color: gray;
+  border: 1px solid gray;
+}
+div.send {
+  margin-top: 2rem;
+}
+button.replyall {
+  margin-left: 1rem;
+}
+button.replyall span {
+  margin: 0 10px 0 0px;
+}
+button.forward {
+  margin-left: 1rem;
+}
+button.reply span {
+  margin-right: 12px;
+}
+button.forward span {
+  margin: 2px 5px 0 0;
+}
+div.dropdisplay .dropdown div.dropdown-menu.show {
+  margin: -9px 0 0 57px;
+  /* position: absolute; */
+  inset: 0px auto auto 0px;
+  transform: translate(48px, 21.3333px);
+  width: 500px;
+  box-shadow: 1px 1px 8px 0px rgba(84, 84, 84, 0.45);
+}
+div.drop {
+  margin: 5px 0;
+}
+div.drop span {
+  margin-left: 51px;
+  color: #b7b7b7;
+}
+div.drop strong {
+  margin-left: 20px;
+}
+div.to {
+  margin: 5px 0;
+}
+div.to span {
+  margin-left: 69px;
+  color: #b7b7b7;
+}
+div.to strong {
+  margin-left: 21px;
+}
+div.dte {
+  margin: 5px 0;
+}
+div.dte span {
+  margin-left: 52px;
+  color: #b7b7b7;
+}
+div.dte small {
+  margin: 3px 0 0 23px;
+}
+div.sub {
+  margin: 5px 0;
+}
+div.sub span {
+  margin-left: 33px;
+  color: #b7b7b7;
+}
+div.sub small {
+  margin: 2px 0 0 22px;
+}
+div.sign {
+  margin: 5px 0;
+}
+div.sign span {
+  margin-left: 13px;
+  color: #b7b7b7;
+}
+div.sign small {
+  margin: 2px 0 0 22px;
+}
+div.sec {
+  margin: 5px 0;
+}
+div.sec span {
+  margin-left: 29px;
+  color: #b7b7b7;
+}
+div.sec span.material-icons {
+  font-size: 17px;
+  margin: 4px 0 0 20px;
+  color: #757575;
+}
+div.sec small {
+  margin: 2px 3px;
+}
+div.imp {
+  margin: 5px 0;
+}
+div.imp span {
+  margin-left: 30px;
+  color: #b7b7b7;
+}
+div.imp small {
+  margin: 3px 0 0 21px;
+}
+div.imp span.material-icons {
+  color: #fdd200;
+}
+/*-------------------------------- reply-display------------------------------------ */
+div.replymail {
+  margin-top: 45px;
+  border: 0.5px solid #dbdbdb;
+  padding: 10px;
+  border-radius: 7px;
+  display: none;
+  position: relative;
+}
+img.userreply {
+  width: 67px;
+  float: left;
+  margin: -3px 12px 0 -89px;
+}
+a.rly {
+  color: #474747;
+}
+p.name {
+  margin: 5px 0 0 7px;
+  font-weight: 500;
+  color: gray;
+}
+a.dlist {
+  color: #6a6a6a;
+}
+div.bottom span.material-icons {
+  color: grey;
+  cursor: pointer;
+  margin: 6px 5px;
+}
+div.ql-toolbar.ql-snow {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  padding: 5px;
+  width: 668px;
+  box-shadow: 0px 2px 8px -2px rgb(34 34 34 / 82%);
+}
+div.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  /* float: left; */
+  height: 24px;
+  padding: 5px 4px;
+  width: 18px;
+}
+div#textarea {
+  border: none;
+}
+
+div.ql-editor.ql-blank {
+  height: 160px;
+  overflow-y: auto;
+}
+div.ql-editor {
+  height: 160px;
+  overflow-y: auto;
+}
+
+a.dlist small.dr {
+  margin: 0 0 0 8px;
+}
+a.dlist span.material-icons {
+  margin: 0px 0px 0 -8px;
+}
+
+a.dlist small.edit {
+  margin-left: -5px;
+}
+
+a.dlist small.pop {
+  margin-left: 4px;
+}
+hr.dropdow-divider {
+  height: 0.3px;
+  color: #dadada;
+  opacity: 0.05;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button.snd {
+  width: 87px;
+}
+button.snd:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 1px 8px -1px rgba(12, 37, 242, 0.75);
+  transition-delay: 300;
+}
+
+button.reply,
+button.replyall,
+button.forward:active {
+  background: none;
+}
+
+#star,
+#reply,
+#more {
+  cursor: pointer;
+}
+
+/* Spinner */
+
+.spinnerDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 7px;
+  transform: translate(-10px, -10px);
+}
+
+#floatingBarsG {
+  transform: translateY(-50%);
+  width: 60px;
+  height: 75px;
+  margin-inline: auto;
+}
+
+.loader__text {
+  margin-inline: auto;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+
+.blockG {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+  height: 23px;
+  border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  transform: scale(0.4);
+  -o-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  animation-name: fadeG;
+  -o-animation-name: fadeG;
+  -ms-animation-name: fadeG;
+  -webkit-animation-name: fadeG;
+  -moz-animation-name: fadeG;
+  animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-direction: normal;
+  -o-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+}
+
+#rotateG_01 {
+  left: 0;
+  top: 27px;
+  animation-delay: 0.45s;
+  -o-animation-delay: 0.45s;
+  -ms-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.45s;
+  -moz-animation-delay: 0.45s;
+  transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+
+#rotateG_02 {
+  left: 8px;
+  top: 10px;
+  animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+
+#rotateG_03 {
+  left: 25px;
+  top: 3px;
+  animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  -ms-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+}
+
+#rotateG_04 {
+  right: 8px;
+  top: 10px;
+  animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+
+#rotateG_05 {
+  right: 0;
+  top: 27px;
+  animation-delay: 1.05s;
+  -o-animation-delay: 1.05s;
+  -ms-animation-delay: 1.05s;
+  -webkit-animation-delay: 1.05s;
+  -moz-animation-delay: 1.05s;
+  transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+
+#rotateG_06 {
+  right: 8px;
+  bottom: 7px;
+  animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  -ms-animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+}
+
+#rotateG_07 {
+  bottom: 0;
+  left: 25px;
+  animation-delay: 1.35s;
+  -o-animation-delay: 1.35s;
+  -ms-animation-delay: 1.35s;
+  -webkit-animation-delay: 1.35s;
+  -moz-animation-delay: 1.35s;
+  transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+
+#rotateG_08 {
+  left: 8px;
+  bottom: 7px;
+  animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+}
+
+@keyframes fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@-o-keyframes fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@-ms-keyframes fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@-webkit-keyframes fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@-moz-keyframes fadeG {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.spinner__btn {
+  margin-top: 10px;
+  margin-inline: auto;
+  color: white;
+  font-weight: 900;
+  border: solid 3px white;
+  width: 45px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.spinner__btn:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+/* spinner styles end */

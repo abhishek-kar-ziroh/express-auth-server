@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+}
+.page__container {
+  margin: 10px;
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: 90%;
+}
+
+.logos {
+  flex: 1;
+  background: #e71c4e;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  padding-right: 10px;
+  padding-top: 40px;
+}
+
+.logo__text {
+  color: white;
+}
+
+.logos > p {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 41px;
+}
+
+.logos > span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.letter__logo__container {
+  display: flex;
+  flex-direction: row-reverse;
+  transform: translateY(-60px);
+}
+
+.letter__logo__container > img {
+  width: 300px;
+}
+
+.clock__logo {
+  background: #ffffff;
+  border-radius: 30px;
+  width: 448px;
+  height: 58px;
+  transform: translateY(-60px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.clock__logo > span {
+  padding: 1px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.logo__and__text > img {
+  transform: translateY(-2px);
+  padding-right: 2px;
+}
+
+.signup__btn {
+  width: 120px;
+  height: 45px;
+  padding: 10px 25px;
+  background: #e71c4e;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.pass__pharse__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 70px;
+  padding-top: 40px;
+}
+
+.pass__pharse__container > span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 44px;
+  padding-top: 30px;
+  max-width: 20ch;
+}
+
+.pass__pharse__container > input {
+  width: 471px;
+  height: 50px;
+  background: rgba(196, 196, 196, 0.12);
+  border: 1px solid #a7a7a7;
+  box-sizing: border-box;
+  border-radius: 12px;
+  outline: none;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  margin-top: 40px;
+}
+
+.view__btn {
+  margin-top: 20px;
+  width: 97px;
+  height: 45px;
+  padding: 10px 25px;
+  background: #e71c4e;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.ziroh__logo {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ziroh__logo > img {
+  height: 38px;
+}
+
+.disabled {
+  background: #c5c5c5;
+  pointer-events: none;
+}

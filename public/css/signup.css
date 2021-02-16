@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+}
+.page__container {
+  margin: 10px;
+  position: relative;
+  display: flex;
+  width: 90%;
+  height: 98%;
+}
+
+.logos {
+  position: relative;
+  flex: 1;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12);
+  border-radius: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  background-image: url("../assets/logos.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: space-between;
+}
+
+.logo__text {
+  color: white !important;
+}
+
+small {
+  font-size: 15px !important;
+}
+
+.logos > p {
+  padding-left: 50px;
+  padding-top: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 41px;
+}
+
+.logos > span {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 44px;
+  padding-left: 100px;
+  padding-top: 80px;
+}
+
+.logos > ul {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  list-style: none;
+  padding-left: 100px;
+  padding-top: 18px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logos > div {
+  padding-top: 70px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li > div {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: white;
+  color: #d0337e;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 12px;
+  min-width: 21px;
+}
+
+.logos > img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.signup__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 70px;
+  padding-top: 40px;
+  max-width: 500px;
+}
+
+.ziroh__logo {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ziroh__logo > img {
+  height: 38px;
+}
+
+.signup__container > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 33px;
+}
+
+.signup__container > span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+
+.signup__container > label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.input__containers {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  border: 1.66769px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 40.0246px;
+  height: 40px;
+}
+
+.input__containers > img {
+  height: 20px;
+  padding: 0 4px;
+}
+.input__containers > input {
+  flex: 1;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  outline: none;
+  border: none;
+  height: 37px;
+  padding-left: 5px;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.submit__btn {
+  margin-top: 20px;
+  text-align: center;
+  height: 45px;
+  padding: 10px 25px;
+  background: #e71c4e;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.disabled {
+  background: #c5c5c5;
+  pointer-events: none;
+}
+
+.success__container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  display: none;
+}
+
+.success__container .logos {
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  padding: 40px 70px;
+  max-width: fit-content;
+  width: 719px;
+  height: 248px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.success__container .logos > span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 !important;
+}
+
+.success__container .logos > span > span {
+  color: #e71c4e;
+}
+
+.show {
+  display: flex;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

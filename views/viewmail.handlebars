@@ -1,0 +1,140 @@
+<div class="banner">
+    <div class="bannerOverlay">
+        <span>OMail</span>
+    </div>
+    <div class="logo">
+        <div class="text">Powered by</div>
+        <a href="https://ziroh.com" target="_blank"><img src="/assets/omail 2.svg" alt="ziroh labs logo"></a>
+    </div>
+</div>
+<div class="container mt-5">
+    {{#if subject}}
+    <div class="container-box">
+        <div class="d-flex">
+            <h4>{{subject}}</h4>
+            <span class="important material-icons">label_important</span>
+            
+        </div>
+        <div class="user d-flex">
+            <div><img class="user" src="/assets/profile.svg" alt="user"></div>
+            <div class="column headlabel">
+                <div class="d-flex justify-content-between">
+                    <div class="dropdisplay">
+                        <h6>{{from}}</h6>
+                        <div class="dropdown">
+                            <a class=" mail btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">to me</a>
+                            <div class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                                <div class="d-flex drop"><span>from:</span><strong>{{from}}</strong>
+                                </div>
+                                <div class="d-flex to"><span>to:</span><strong>me</strong>
+                                </div>
+                                <div class="d-flex dte"><span>date:</span><small id="date">{{date}}</small> </div>
+                                <div class="d-flex sub"><span>subject:</span><small>{{subject}}</small> </div>
+                                <div class="d-flex sign"><span>signed-by:</span><small> xyz-com.20150623.gapyssmtp.com</small> </div>
+                                <div class="d-flex sec"><span>security:</span><span class="material-icons">lock</span><small>Standard encryption (TLS) <a href="">Learn more</a></small> </div>
+                                <div class="d-flex imp"><span class="d-flex"><span class="important material-icons">label_important</span>:</span><small>Important mainly because it was sent directly to you.
+                                    </small> </div>
+                            </div>
+                        </div>
+                        <p class="sub"><small>message here</small></p>
+                        <p>{{{message}}}</p>
+                    </div>
+
+                    <div class="hicon d-flex">
+                        <p><small id="time">{{date}}</small></p>
+                        <span id="star" class="material-icons">star_outline</span>
+                        <span id="reply" class="material-icons">reply</span>
+                        <span id="more" class="material-icons">more_vert</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr class="dividr">
+         <small class="font-weight-light text-center text-muted" style="color: #FF0000 !important;">Please note that the message will be deleted upon refresh.</small>
+         <hr class="dividr">
+        <div>
+            <p style="font-size: 0.75rem;">This message and its attachments contain confidential information (including but not limited to
+                source code, pre-release marketing material, product data, and company information) intended for
+                a specific individual and purpose, and is protected by law. If you are not the intended recipient,
+                please immediately delete this message and inform us at <strong class="email"> legal@ziroh.com.</strong> Any disclosure, copying,
+                or distribution of this message, or the taking of any action based on it by you, is strictly prohibited....
+            </p>
+        </div>
+        <!-- reply-display -->
+        <div class="replymail" id="replybox">
+            <div class="spinnerDiv">
+                <div id="floatingBarsG">
+                    <div class="blockG" id="rotateG_01"></div>
+                    <div class="blockG" id="rotateG_02"></div>
+                    <div class="blockG" id="rotateG_03"></div>
+                    <div class="blockG" id="rotateG_04"></div>
+                    <div class="blockG" id="rotateG_05"></div>
+                    <div class="blockG" id="rotateG_06"></div>
+                    <div class="blockG" id="rotateG_07"></div>
+                    <div class="blockG" id="rotateG_08"></div>
+                </div>
+                <div class="loader__text">Sending...</div>
+                <div class="spinner__btn">OK</div>
+            </div>
+            <img class="userreply" src="/assets/user.svg" alt="">
+            <div class="d-flex">
+                <div class="btn-group">
+                    <a class="rly btn dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons">reply</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dlist dropdown-item d-flex align-items-center" href="#"><span class="material-icons">reply</span><small class="dr">Reply</small> </a></li>
+                        <li><a class="dlist dropdown-item d-flex align-items-center" href="#"><span class="material-icons">reply_all</span><small class="dr">Reply all</small></a></li>
+                        <li><a class="dlist dropdown-item d-flex align-items-center" href="#"><span class="material-icons">forward</span><small class="dr">Forward</small></a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dlist dropdown-item d-flex justify-content-center" href="#"><small class="edit"> Edit Subject</small></a></li>
+                        <li><a class="dlist dropdown-item d-flex justify-content-center" href="#"><small class="pop"> Pop out reply</small></a></li>
+                    </ul>
+                </div>
+                <p class="name"><small>{{from}}</small></p>
+            </div>
+            <div id="textarea"></div>
+            <div class=" d-flex justify-content-between align-items-center">
+                <div class="d-flex ">
+                    <button type="button" class="snd btn btn-primary" type="button">Send</button>
+                    <!-- <button type="button" class="btn dtog btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                    <ul class="schedulesend dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><span><img src="./send.svg" alt="send"></span><small> Schedule send</small></a></li>
+                    </ul> -->
+                    <div class="bottom">
+                        <span class="material-icons">undo</span>
+                        <span class="material-icons">redo</span>
+                        <span class="material-icons">attachment</span>
+                        <span class="material-icons">link</span>
+                        <span class="material-icons">insert_emoticon</span>
+                        <span class="material-icons">cloud</span>
+                        <span class="material-icons">edit</span>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <!-- <span class="material-icons">more_vert</span> -->
+                    <span onclick="hide_box()" class="material-icons">delete</span>
+                </div>
+            </div>
+        </div>
+        <!-- reply-display--end---->
+        <div class="send d-flex" id="btnbox">
+            <button type="button" onclick="show_reply()" class="reply btn btn-primary"><span class="material-icons">reply</span>Reply</button>
+            <button type="button" onclick="show_reply()" class="replyall btn btn-primary"><span class="material-icons">reply_all</span>Reply all</button>
+            <button type="button" class="forward btn btn-primary"><span class="material-icons">forward</span>Forward</button>
+        </div>
+    </div>
+    {{else}}
+    <div>Message is no longer available</div>
+     {{/if}}
+</div>
+<script src="/scripts/Base64Utils.js"></script>
+<script src="/scripts/viewmail.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>

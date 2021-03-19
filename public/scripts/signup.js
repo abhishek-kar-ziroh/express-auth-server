@@ -4,11 +4,14 @@ const submitDeltails = async (e) => {
     password = document.querySelector("#password").value;
   if (await signup(username, password)) {
     document.querySelector(".success__container").style.display = "flex";
-    window.postMessage({
-      text: "signupStatus",
-      status: "success",
-    });
   }
+};
+
+document.querySelector(".success__btn > button").onclick = () => {
+  window.postMessage({
+    text: "signupStatus",
+    status: "success",
+  });
 };
 
 const btnToggler = (e) => {

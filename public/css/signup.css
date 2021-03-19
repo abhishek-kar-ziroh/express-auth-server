@@ -241,3 +241,23 @@ li > div {
   bottom: 0;
   right: 0;
 }
+
+.success__btn {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.success__btn > button {
+  width: 101px;
+  height: 45px;
+  background: #e71c4e;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
